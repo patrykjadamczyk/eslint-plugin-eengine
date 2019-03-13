@@ -1,0 +1,59 @@
+{
+  "name": "eslint-plugin-eengine",
+  "version": "0.0.1",
+  "description": "EEngine specific linting rules for ESLint",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrykjadamczyk/eslint-plugin-eengine.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "eengine"
+  ],
+  "author": "Patryk Adamczyk <patrykadamczyk@patrykadamczyk.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrykjadamczyk/eslint-plugin-eengine/issues"
+  },
+  "homepage": "https://github.com/patrykjadamczyk/eslint-plugin-eengine#readme",
+  "scripts": {
+    "lint": "eslint ./",
+    "pretest": "npm run lint",
+    "test": "npm run unit-test",
+    "unit-test": "istanbul cover --dir reports/coverage node_modules/mocha/bin/_mocha tests/lib/**/*.js tests/util/**/*.js tests/index.js"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib"
+  ],
+  "dependencies": {
+    "array-includes": "^3.0.3",
+    "doctrine": "^3.0.0",
+    "has": "^1.0.3",
+    "jsx-ast-utils": "^2.0.1",
+    "object.fromentries": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "resolve": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.15.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2",
+    "sinon": "^7.2.7",
+    "typescript": "^3.3.3333",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.15.1"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
