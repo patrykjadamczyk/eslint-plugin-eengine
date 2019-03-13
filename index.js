@@ -3,8 +3,8 @@
 const has = require('has');
 
 const allRules = {
-  'prefer-stateless-function': require('./lib/rules/prefer-stateless-function'),
-  'prop-types': require('./lib/rules/prop-types'),
+  'enforce-classes': require('./lib/rules/enforce-classes'),
+  'enforce-proptypes-in-class': require('./lib/rules/enforce-proptypes-in-class'),
 };
 
 function filterRules(rules, predicate) {
@@ -47,8 +47,8 @@ module.exports = {
         }
       },
       rules: {
-        'eengine/prop-types': 2,
-        'eengine/prefer-stateless-function': 2,
+        'eengine/enforce-classes': 2,
+        'eengine/enforce-proptypes-in-class': 2,
       }
     },
     all: {
