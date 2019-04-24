@@ -1,6 +1,8 @@
 ESLint-plugin-EEngine
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/patrykjadamczyk/eslint-plugin-eengine.svg)](https://greenkeeper.io/)
+
 EEngine specific linting rules for ESLint
 
 # Installation
